@@ -1,0 +1,735 @@
+@font-face {
+    font-family: "8byt";
+    src:url(./fonts/Press_Start_2P/PressStart2P-Regular.ttf)
+}
+    
+@font-face {
+    font-family: "jaro";
+    src:url(./fonts/Jaro/Jaro-Regular-VariableFont_opsz.ttf)
+}
+
+
+/* Reset de básicos */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./img/fondo\ para\ pagina.jpg");
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0a127c;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.menu a::before,
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(45deg, #e100ff, #ffffff, #ff00ff, #b700ff);
+    transition: all 0.3s;
+    transform: scaleX(0);
+    transform-origin: center;
+    margin-top: 5px;
+}
+
+.menu a::before {
+    top: 0;
+    left: 0;
+}
+
+.menu a::after {
+    bottom: 0;
+    right: 0;
+}
+
+.menu a:hover::before,
+.menu a:hover::after {
+    transform: scaleX(1);
+}
+
+.fire {
+    position: absolute;
+font-family: "8byt";
+}
+
+
+   
+
+.fire::before
+
+
+.fire::before {
+    animation: flicker 1s infinite alternate;
+}
+
+.fire:hover::before,
+.fire:hover::after {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.8; }
+}
+
+
+.titulo1 {
+    font-family: "8byt";
+margin-left: 23%;
+margin-top: 5%;
+font-size: 50px;
+border: 8px dashed white;
+width: 1000px;
+padding-top: 15px;
+padding-left: 15px;
+padding: 50px;
+}
+
+
+
+.juegos {
+    width: 300px;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border:8px double #0eb42a;
+    margin-right: 1%;
+    margin-top: 3%;
+    margin-left: 2%;
+background-color: #ffffff;
+}
+
+.precio-juegos {
+    margin-top: 10px;   
+   
+
+}
+
+
+
+.boton-comprar1 {
+    font-family: "8byt";
+    width: 300px;
+    height: auto;
+    justify-content: space-between;
+    
+    margin-right: 1%;
+    
+    margin-left: 2.5%;    
+}
+
+.comprar1 { 
+    background-color: #ffffff;
+    font-family: "8byt";
+    max-width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: auto;
+    margin-left: 4.1%;
+    text-decoration: none;
+
+}
+
+.comprar2 {
+    background-color: #ffffff;
+    position: absolute;
+    font-family: "8byt";
+    max-width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: -1%;
+    margin-left: 23.9%;
+    text-decoration: none;
+
+}
+.comprar3 {
+    background-color: #ffffff;
+    font-family: "8byt";
+    position: absolute;
+    max-width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: -1%;
+    margin-left: 43.6%;
+    text-decoration: none;
+
+}
+.comprar4 {
+    background-color: #ffffff;
+    font-family: "8byt";
+    position: absolute;
+    max-width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: -1%;
+    margin-left: 63.6%;
+    text-decoration: none;
+
+}
+.comprar5 {
+    background-color: #ffffff;
+    font-family: "8byt";
+    position: absolute;
+    max-width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: -1%;
+    margin-left: 83.6%;
+    text-decoration: none;
+
+}
+
+.juegos2 {
+    width: 300px;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border:8px double #0eb42a;
+    margin-right: 1%;
+    margin-top: 3%;
+    margin-left: 2%;
+background-color: #ffffff;
+
+}
+
+.titulotrailer {
+    position: absolute;
+    font-family: "8byt";
+    font-size: 40px;
+margin-left: 33.4%;
+margin-top: 9%;
+}
+
+
+.videofifa {
+position: absolute;
+    background-color: #ffffff;
+border: 10px double #0eb42a;
+border-radius: 5%;
+margin-left: 25%;
+margin-top: 12%;
+}
+.videohogwarts{
+    position: absolute;
+    margin-left: 25%;
+    border: 10px double #0eb42a;
+    border-radius: 5%;
+    margin-top:45%;
+    background-color: #ffffff;
+}
+.nosotros {
+    font-family: "8byt";
+    font-size: 40px;
+    position: absolute;
+margin-top: 86%;
+margin-left: 42%;
+}
+
+.textonosotros {
+    font-size: 15px;
+    position: absolute;
+    margin-top: 90%;
+    text-align: center;
+color: white;
+    font-family: "8byt";
+
+border-radius: 10px;
+padding: -10%;
+}
+
+.footer {
+    background-color: #0a127c;
+    color: #ffffff;
+    padding: 159px 0;
+position: absolute;
+margin-top: 110.9%;
+padding-right: 52.7%;
+padding-bottom: 1%;
+}
+
+.metodotitulo{
+    position: absolute;
+    font-family: "8byt";
+    margin-left: 3.9%;
+margin-top: -3%;
+}
+
+.metodosdepagofotos {
+    max-inline-size: 25%;
+width: 900px;
+height: auto;
+justify-content: space-evenly;
+margin-left: 6.5%;
+margin-top: 1%;
+}
+
+.tituloenvio {
+    position: absolute;
+    font-family: "8byt";
+    margin-left: 3.9%;
+margin-top: 1%;
+}
+
+.fotoenvio {
+    max-inline-size: 25%;
+    width: 65px;
+    height: auto;
+    
+    margin-left: 8%;
+margin-top: 6%;
+}
+
+.tituloredes {
+    position: absolute;
+    font-family: "8byt";
+margin-left: 43%;
+margin-top: -15.4%;
+}
+
+.iglogo{
+  position: absolute;
+    width: 45px;
+margin-left: 42.5%;
+margin-top: -13.8%;
+}
+
+.contactofooter {
+font-family: "8byt";
+    position: absolute;
+margin-left: 84%;
+margin-top: -15.4%;
+}
+
+.mailalloy {
+    font-size: 10px;
+    font-family: "8byt";
+    position: absolute;
+    margin-left: 84%; 
+    margin-top: -12.8%;
+}
+.numerotel {
+    font-size: 10px;
+    font-family: "8byt";
+    position: absolute;
+    margin-left: 84%; 
+    margin-top: -10.8%;
+}
+
+.derechos {
+    font-size: 10px;
+    font-family: "8byt";
+    position: absolute;
+margin-left: 36.5%;
+
+}
+
+
+
+.titulopagar {
+    font-family: "8byt";
+    font-size: 30px;
+margin-left: 33%;
+margin-top: 15%;
+}
+.tarjeta-numero {
+    width: 190px;
+    margin-top: 3%;
+margin-left: 54%;
+}
+.textotarjeta {
+    
+    font-family: "8byt";
+    position: absolute;
+    margin-left: 37.3%;
+    margin-top: -1%;
+}
+
+.nombre-titular {
+    width: 190px;
+    margin-left: 54%;
+    margin-top: 0.5%;
+}
+
+.textotitular {
+    font-family: "8byt";
+    position: absolute;
+    margin-left: 37.3%;
+    margin-top: -1%;
+}
+
+.textovencimiento {
+    font-family: "8byt";
+    position: absolute;
+    margin-left: 37.3%;
+    margin-top: -1%;
+}
+
+.vencimiento {
+    width: 190px;
+    margin-left: 54%;
+    margin-top: 0.5%;
+}
+
+.cvv {
+    width: 190px;
+    margin-left: 54%;
+    margin-top: 0.5%;
+}
+
+.textocvv {
+    font-family: "8byt";
+    position: absolute;
+    margin-left: 37.2%;
+    margin-top: -1%;
+}
+
+.botonfinalizar{
+    font-family: "8byt";
+    background-color: #0eb42a;
+position: absolute;
+margin-left: 44%;
+margin-top: 1%;
+text-decoration: none;
+color: #ffffff;
+padding: 8px 8px 8px 8px;
+
+}
+
+.derechos2 {
+    font-size: 10px;
+    font-family: "8byt";
+    position: absolute;
+margin-left: 38.5%;
+margin-top: 18.5%;
+}
+
+.titulotyc{
+    position: absolute;
+    font-family: "8byt";
+    font-size: 40px;
+margin-left: 27%;
+margin-top: 9%;
+}
+
+.tyc p {
+    position: absolute;
+    align-content: center;
+font-family: "8byt";
+background-color: #0a127c;
+padding: 9px 9px 9px 9px;
+border-radius: 30px;
+margin-left: 27%;
+}
+
+.termino1 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 13%;
+max-width: 920px;
+
+}
+.termino2 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 16%;
+max-width: 920px;
+}
+.termino3 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 19%;
+max-width: 920px;
+}
+.termino4 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 23%;
+max-width: 920px;
+}
+.termino5 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 28%;
+max-width: 920px;
+}
+.termino6 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 32%;
+max-width: 920px;
+}
+.termino7 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 37%;
+max-width: 920px;
+}
+.termino8 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 41%;
+max-width: 920px;
+}
+.termino9 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 45%;
+max-width: 920px;
+}
+.termino10 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 49.8%;
+max-width: 920px;
+}
+.termino11 {
+    position: absolute;
+    margin-left: 30.2%;
+margin-top: 55.4%;
+max-width: 920px;
+}
+
+.siacepto {
+position: absolute;
+    font-family: "8byt";
+color: white;
+background-color: #0eb42a;
+padding: 8px 8px 8px 8px;
+margin-top: 62%;
+margin-left: 46.5%;
+}
+.noacepto {
+    position: absolute;
+        font-family: "8byt";
+    color: white;
+    background-color: red;
+    padding: 8px 8px 8px 8px;
+    margin-top: 65%;
+    margin-left: 46.5%;
+    }
+
+    .derechos3 {
+        font-size: 10px;
+    font-family: "8byt";
+    position: absolute;
+margin-left: 38.5%;
+margin-top: 71.5%;
+    }
+
+.iniciasesion{
+ position: absolute;
+    font-family: "8byt";
+    font-size: 20px;
+margin-left: 43%;
+margin-top: 14%;
+}
+
+.textousuario {
+    position: absolute;
+    font-family: "8byt";
+    font-size: 20px;
+    margin-left: 46.1%;
+margin-top: 18.2%;
+}
+
+.usuario-login {  
+   margin-top: 19.9%;
+   margin-left: 44.8%; 
+padding:  5px 5px 5px 5px;
+
+border: 7px solid #0eb42a;
+border-radius: 10px;
+}
+
+.textocontra {
+    position: absolute;
+    font-family: "8byt";
+    font-size: 20px;
+    margin-left: 44.7%;
+    margin-top: 1%;
+}
+
+.contra-form {
+    margin-left: 44.8%;
+margin-top: 2.6%;
+padding:  5px 5px 5px 5px;
+border: 7px solid #0eb42a;
+border-radius: 10px;
+}
+
+.botoniniciarsesion {
+    position: absolute;
+    font-family: "8byt";
+    background-color: #0eb42a;
+    border-radius: 10px;
+ margin-left: 44%;
+ margin-top: 2%;
+ padding:  5px 5px 5px 5px;
+text-decoration: none;
+color: white;
+}
+
+.botonregistrar {
+    color: black;
+    position: absolute;
+    font-family: "8byt";
+    background-color: #ffee00;
+    border-radius: 10px;
+    margin-left: 45.6%;
+    margin-top: 4%;
+    padding:  5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+.botonregistrarse {
+    position: absolute;
+    font-family: "8byt";
+    background-color: #0eb42a;
+    border-radius: 10px;
+ margin-left: 45%;
+ margin-top: 2%;
+ padding:  5px 5px 5px 5px;
+text-decoration: none;
+color: white;
+}
+
+.botoncance {
+    color: white;
+    position: absolute;
+    font-family: "8byt";
+    background-color: red;
+    border-radius: 10px;
+    margin-left: 46.4%;
+    margin-top: 4%;
+    padding:  5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .iniciasesion {
+        position: absolute;
+        margin-top: 60%;
+        margin-left: 20%;
+    }
+    .textousuario {
+        margin-top: 73%;
+        margin-left: 35%;
+    }
+    .usuario-login {
+        margin-top: 82%;
+        margin-left: 30%;
+
+    }
+
+    .textocontra {
+        margin-top: 3%;
+        margin-left: 30%;
+    }
+
+
+    .contra-form {
+        margin-top: 12%;
+        margin-left: 30%;
+    }
+    
+    .botoniniciarsesion {
+        margin-top: 4%;
+        margin-left: 26.5%;
+    }
+
+   .botonregistrar {
+    margin-top: 13%;
+    margin-left: 34%;
+   }
+.derechos2 {
+    margin-top: 50%;
+    margin-left: 8%;
+font-size: 7px;
+}
+
+.botonfinalizar {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.cvv{
+    margin-top: 8%;
+    margin-left: 10%;
+}
+.textocvv {
+    margin-top: -10%;
+    margin-left: 10%;
+}
+
+.vencimiento {
+    margin-top: 10%;
+margin-left: 10%;
+}
+.textovencimiento {
+    margin-left: 10%;
+margin-top: -10%;    
+}
+
+
+.nombre-titular {
+margin-top: 10%;
+margin-left: 10%;
+}
+.textotitular {
+margin-left: 10%;
+margin-top: -10%;
+}
+
+.tarjeta-numero {
+    margin-top: 25%;
+margin-left: 10%;
+}
+.textotarjeta{
+margin-top: -10%;
+margin-left: 10%;
+
+}
+.titulopagar {
+    margin-left: 5%
+
+}
+
+.fire {
+    font-size: 10px;
+text-align: start;
+}
+
+}
